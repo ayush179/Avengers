@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtLayoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a Developer"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#0d47a1"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txtLayoutSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android is fun"
+        android:layout_gravity="center"
+        android:textColor="#d84315"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        android:layout_below="@id/txtLayoutHeader"/>
+
+    <ImageView
+        android:id="@+id/imgTonyStark"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tony_stark"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:text="CLICK HERE"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"/>
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="enter your name"
+        android:inputType="text"
+        android:layout_below="@id/txtLayoutSubHeader"/>
+</RelativeLayout>
